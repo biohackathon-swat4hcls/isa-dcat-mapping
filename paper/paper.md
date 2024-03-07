@@ -1,30 +1,30 @@
 ---
-title: 'BioHackEU23 report: Template for the very long title'
-title_short: 'BioHackEU23 #26: unknown chemical substances'
+title: 'SWAT4HCLS 2024 BioHackathon Project report: Implementing ISA mapping with DCAT'
+title_short: 'Implementing ISA mapping with DCAT'
 tags:
-  - cheminformatics
-  - PubChem
+  - ISA
+  - DCAT
   - unknown chemical substances
 authors:
   - name: First Author
     affiliation: 1
-  - name: Last Author
-    orcid: 0000-0000-0000-0000
+  - name: Xiaofeng Liao
+    orcid: 0000-0002-4706-1084
     affiliation: 2
 affiliations:
   - name: First Affiliation
     index: 1
-  - name: Second Affiliation
+  - name: Radboudumc
     index: 2
-date: 8 November 2023
+date: 29 Feb 2024
 cito-bibliography: paper.bib
 event: BH23EU
-biohackathon_name: "BioHackathon Europe 2023"
-biohackathon_url:   "https://biohackathon-europe.org/"
-biohackathon_location: "Barcelona, Spain, 2023"
-group: Project 26
+biohackathon_name: "SWAT4HCLS 2024 Biohackathon"
+biohackathon_url:   "https://www.swat4ls.org/workshops/leiden2024/hackathon/"
+biohackathon_location: "Leiden, Netherland, 2024"
+group: Project 6
 # URL to project git repo --- should contain the actual paper.md:
-git_url: https://github.com/biohackrxiv/publication-template
+git_url: https://github.com/biohackathon-swat4hcls/isa-dcat-mapping
 # This is the short authors description that is used at the
 # bottom of the generated paper (typically the first two authors):
 authors_short: First Author \emph{et al.}
@@ -33,8 +33,37 @@ authors_short: First Author \emph{et al.}
 
 # Introduction
 
-As part of the BioHackathon Europe 2023, we here report...
+As part of the SWAT4HCLS 2024 Biohackathon, we here report the output the project No.6: Implementing ISA mapping with DCAT
 
+A FAIR Data Point (FDP) is a software architecture aiming to define a common approach to publish semantically-rich and machine-actionable metadata according to the FAIR principles (findable, accessible, interoperable and reusable). FDP ultimately stores information about data sets, which is the definition of metadata. The FDP uses the W3C's Data Catalog Vocabulaire (DCAT) version 2 model as the basis for its metadata content.
+ 
+In X-omics initiative, considering the various metadata formats adopted by the different X-omics communities, it is reasonable to adopt a standard metadata format as a template for submitting the metadata. To this purpose, we employed the ISA metadata framework as our basic framework to capture and standardize study (design) information from the different -omics metadata schemes. The ISA metadata schema is commonly adopted by the research community for submission of metabolomics data, for example by EMBL-EBI's MetaboLights.
+
+
+Objective:
+To make ISA metadata schema compatible with FDP, we need to align the ISA metadata schema with DCAT.
+Specifically, to implement the mapping of Investigation/Study/Assay with DCAT core
+
+
+
+
+
+# Results
+The discussion leads to the an ![initial model](./InitialModel).
+A working version of this diagram can be accessed at [this link](https://excalidraw.com/#room=9059444f3c59c0298c4a,Qsjn-RuVXjqv43gGyhgG_g)
+
+
+# Discussion
+
+...
+
+## Acknowledgements
+
+...
+
+## References
+
+<!-- 
 # Formatting
 
 This document use Markdown and you can look at [this tutorial](https://www.markdowntutorial.com/).
@@ -97,18 +126,4 @@ Possible CiTO typing annotation include:
 * agreesWith
 * disagreesWith
 * updates
-* citation: generic citation
-
-
-# Results
-
-
-# Discussion
-
-...
-
-## Acknowledgements
-
-...
-
-## References
+* citation: generic citation -->
